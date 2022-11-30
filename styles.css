@@ -1,0 +1,135 @@
+/* Fuentes */ 
+@font-face {
+    font-family:'Inconsolata';
+    src: url('Inconsolataregular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Tajawal';
+    src: url('tajawalregular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Contenedor general */
+.grid-container {
+    background-color: rgb(0, 0, 0);
+    display: grid; 
+    height: 350vh; 
+    width: 100vw;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 5% auto auto auto auto 5%;
+    text-align: center; 
+    padding: 1.25rem; 
+    gap: 1.25rem;
+}
+
+/* Barra de navegación */
+.navigation {
+    grid-column: 1/5;
+    background-color: #B8E4F0;
+    font-size: 1.5625rem;
+    
+}
+
+.navbar-brand {
+    font-size: 1.875rem;
+}
+
+/* Diseño de las cajas-secciones */ 
+.bloque {
+    background-color: #98BAE7;
+    border: 1px black solid; 
+    color: black; 
+    padding: 1.25rem; 
+    font-size: 1.5625rem; 
+    grid-column: 1/5; 
+}
+
+/* Diseño del subtítulo en la portada */
+#subtitulo {
+    font-family:'Inconsolata';
+    font-size: 3.75rem;  
+}
+
+/* Diseño de los textos de la página web*/
+#texto {
+    font-family: 'tajawalregular' ; 
+    font-size: 30px; 
+}
+
+/* margarita*/
+.photo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#jennifer:hover{
+    transition: 2s;
+    background-color: teal;
+
+}
+
+#eva:hover{
+    transition: transform 2s;
+    transform: scale(1.2);
+}
+
+#margarita:hover{
+    transition: transform 2s;
+    transform: scale(1.2);
+}
+
+#aldara:hover{
+    transition: transform 2s;
+    transform: scale(1.2);
+}
+
+/* margarita*/
+
+/* Sección de footer */
+.footer1 {
+    grid-column: 1/2; 
+    background-color: #6E3CBC;
+}
+.footer2 {
+    grid-column: 2/3;
+    background-color: #6E3CBC;
+}
+
+.susbribe-box {
+    font-family: 'tajawalregular' ; 
+    font-size: 1.5625rem; 
+}
+.footer3 {
+    grid-column: 3/4;
+    background-color: #6E3CBC;
+}
+.footer4 {
+    grid-column: 4/5;
+    background-color: #6E3CBC;
+}
+
+.navbar2 {
+    align-content: center;
+}
+
+
+/* Media query para hacer que sea responsive */ 
+@media all and (max-width: 37.5rem) {
+    .footer1 , .footer2 , .footer3 , .footer4 {
+        grid-column: 1 / 5; 
+    }
+    .grid-container { grid-template-rows: 5% auto auto auto auto auto auto auto 5%;}
+    .photo-container {
+        flex-direction: column;
+    }
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    }
